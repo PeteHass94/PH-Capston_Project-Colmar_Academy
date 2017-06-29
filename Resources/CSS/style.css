@@ -1,0 +1,445 @@
+/*
+color hunt.co: http://colorhunt.co/c/42533
+ dark: #384259
+ red: hex: #F73859 hsl: 350° 92% 59%
+lightgreen: #7AC7C4
+very light green: #C4EDDE
+font: sintony and poppins from https://www.behance.net/gallery/35768979/Typography-Google-Fonts-Combinations
+
+*/
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: hsla(350, 92%, 59%, 0.2);
+  font-family: "Poppins","Helvetica", "Arial", serif;
+}
+div {
+  display: block;
+}
+/* header*/
+header {
+  background-color: #F73859;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  font-size: 1.5rem;
+}
+header nav {
+  height: 4rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  color: #384259;
+
+  font-family: "Open Sans Condensed", "Arial", sans-serif;
+}
+.logo h1 {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url(https://fonts.gstatic.com/s/opensanscondensed/v11/gk5FxslNkTTHtojXrkp-xBEur64QvLD-0IbiAdTUNXE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+.logo span {
+  color: black;
+  font-weight: 700;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'), url(https://fonts.gstatic.com/s/opensanscondensed/v11/gk5FxslNkTTHtojXrkp-xIF8zhZCJ7x9Pr62cRgaVUA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+  font-family: "Sintony", "Arial", sans-serif;
+}
+.menu ul li{
+  display: inline-block;
+}
+.button {
+  text-decoration: none;
+  font-size: 1.5rem;
+  height: 100%;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.button:hover {
+  color: #7AC7C4;
+}
+#mobile .button:hover {
+  padding-bottom: 0.25rem;
+  border-bottom: 0.5rem solid #7AC7C4;
+}
+
+/* mobile */
+#mobile {
+  justify-content: space-around;
+  display: none;
+}
+.banner-break {
+  display: block;
+  background-color: #384259;
+  height: 4rem;
+  width: 100%;
+}
+@media only screen and (max-width: 480px)
+{
+  #desktop {
+    display: none;
+  }
+  #mobile {
+    display: flex;
+  }
+  .banner-break {
+    display:block;
+    height: 15.25rem;
+  }
+}
+/* main */
+/* general layout */
+.container {
+  display: flex;
+  padding: 2rem 1.5rem;
+}
+.container:nth-child(2n+1) {
+  background-color: #C4EDDE;
+}
+h1 {
+  font-size: 2.5rem;
+  line-height: 130%;
+}
+h2 {
+  font-size: 1.5rem;
+  line-height: 120%;
+}
+h3 {
+  font-size: 110%;
+}
+/* banner */
+
+#Banner .left {
+  margin-right: 40px;
+  max-width: 60%;
+}
+#Banner .left img {
+  width: 100%;
+}
+#Banner .right {
+  display: block;
+  margin: auto 0;
+  text-align: left;
+}
+#Banner h1{
+  font-weight:700;
+}
+#Banner h2{
+  padding: 30px 0;
+  line-height: 1.5;
+}
+#Banner .button {
+  background-color: hsla(350, 92%, 59%, 0.2);
+  padding: 8px 0px;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 1rem 2rem 0.5rem rgb(0, 0 , 0);
+}
+#Banner .button h3{
+  text-align: center;
+  color: #ffffff /* white */
+}
+#Banner .button:hover {
+  color: #7AC7C4;
+  background: #F73859;
+}
+#Banner .button h3:hover {
+  color: #7AC7C4;
+}
+#Banner .button:active {
+  background: #ffffff;
+}
+@media only screen and (max-width: 480px)
+{
+  #Banner .left, #information .left {
+    display: none;
+  }
+}
+/*information */
+#information {
+
+}
+#information .left {
+  max-width: 60%;
+  margin-right: 24px;
+}
+
+#information .left img {
+  width: 100%
+
+}
+#information .text h2{
+  padding-top: 32px;
+  padding-bottom: 24px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+#information .text p {
+  padding-bottom: 32px;
+  font-size: 1.1rem;
+}
+#information .text h5 {
+
+}
+#information .right {
+  border-left: 1px solid #D3E0E2;
+  margin: 0 auto auto auto;
+}
+#information .right .mini-container{
+  max-width: 423px;
+  display: flex;
+}
+
+#information .right .mini-container .image{
+  padding: 16px 16px;
+  max-width: 35%
+
+}
+#information .right .mini-container img {
+width: 100%;
+}
+#information .right .text {
+  flex-direction: column;
+  margin: auto;
+}
+
+.text h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.text h5 {
+  font-size: 1rem;
+  padding: 8px 0;
+}
+.expand a{
+  color: blue;
+}
+.mini-container:hover {
+  background-color: #7AC7C4;
+}
+.mobile-image {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  .container#information {
+    padding: 16px 16px 32px 16px;
+  }
+  #information .right {
+    border-left: 0px solid #384259;
+    margin: 16px;
+  }
+  #information .right .mini-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #information .right .mini-container .image {
+    display: none;
+  }
+  .mobile-image {
+    display: flex;
+  }
+  #information .text {
+    padding: 16px;
+  }
+
+}
+/* courses */
+#Course, #Thesis {
+  display: block;
+}
+.heading {
+  margin: 0 auto;
+  padding-bottom: 32px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+#Course .collection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#Course .top, #Course .bottom {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+#Course .thumbnail {
+  margin: 0 16px;
+  background-color: white;
+  width: 33%;
+  flex-basis: auto;
+}
+#Course .thumbnail .image img{
+  width: 100%;
+  flex-shrink: 3;
+}
+#Course .quick-display {
+  flex-basis: 220px;
+}
+#Course .thumbnail .title {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 16px;
+
+}
+#Course .thumbnail .subtitle {
+  font-size: 1rem;
+  padding: 8px 16px;
+}
+#Course .thumbnail .description {
+  font-size: 1rem;
+  padding: 0 16px 24px 16px;
+}
+
+@media only screen and (max-width: 480px) {
+  #Course .heading {
+    padding-bottom: 0px;
+  }
+
+  .collection {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  .collection .thumbnail{
+    display: none;
+  }
+
+  #mobile.thumbnail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 32px;
+    margin-top: 16px;
+    margin-right: 24px;
+    background-color: inherit;
+  }
+  #mobile.thumbnail .title {
+    margin: 8px 0px;
+    border: 5px black;
+    padding: 16px;
+    margin-right: 16px;
+    background-color: grey;
+  }
+
+}
+/* thesis */
+#Thesis .content {
+  display: flex;
+}
+#Thesis .left {
+  max-width: 60%;
+  flex-direction: column;
+  margin-right: 16px;
+}
+#Thesis .video {
+  padding-bottom: 24px;
+}
+#Thesis .video video{
+  max-width: 100%;
+}
+#Thesis .text h3{
+  font-weight: 600;
+  padding-bottom: 24px;
+}
+#Thesis .text p{
+  font: 1rem;
+}
+#Thesis .right {
+  border-left: 1px solid #D3E0E2;
+  margin: 0px auto auto auto;
+}
+#Thesis .mini-container {
+  max-width: 423px;
+  max-height: 168px;
+  display: flex;
+}
+#Thesis .image {
+  padding: 16px;
+  max-width: 35%;
+}
+#Thesis .image img{
+  max-width: 100%;
+}
+#Thesis .text{
+  margin: auto;
+}
+@media only screen and (max-width: 480px) {
+  #Thesis .heading {
+    margin-bottom: 32px;
+    margin-top: 32px;
+    padding-bottom: 0px;
+  }
+
+
+  #Thesis.container {
+    padding: 0;
+  }
+  #Thesis .right {
+    display: none;
+  }
+  #Thesis .content, #Thesis .left, #Thesis .video ,#Thesis .video video {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  #Thesis .left .text {
+    display: none;
+  }
+
+}
+/* footer */
+footer {
+  border-top: 1px solid #384259;
+  background-color: hsla(350, 92%, 59%, 0.5);;
+  padding: 10px 24px 64px 24px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#extra a {
+  padding-left: 16px;
+}
+@media only screen and (max-width: 480px) {
+  footer {
+    margin-top: 24px;
+    padding: 16px;
+  }
+  footer #extra {
+    display: none;
+  }
+}
