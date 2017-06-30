@@ -89,11 +89,6 @@ header nav {
 .button:hover {
   color: #7AC7C4;
 }
-#mobile .button:hover {
-  padding-bottom: 0;
-  background-color: #7AC7C4;
-  outline: #7AC7C4 solid  0.5rem;
-}
 
 /* mobile */
 #mobile {
