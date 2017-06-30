@@ -88,8 +88,9 @@ header nav {
   color: #7AC7C4;
 }
 #mobile .button:hover {
-  padding-bottom: 0.25rem;
-  border-bottom: 0.5rem solid #7AC7C4;
+  padding-bottom: 0;
+  background-color: #7AC7C4;
+  outline: #7AC7C4 solid  0.5rem;
 }
 
 /* mobile */
@@ -184,35 +185,50 @@ h3 {
   }
 }
 /*information */
-#information {
-
+#information.container {
+  padding-top: 0;
 }
 #information .left {
   max-width: 60%;
-  margin-right: 24px;
+  margin-right: 1.5rem;
+  padding-top: 2rem;
 }
 
 #information .left img {
   width: 100%
-
 }
 #information .text h2{
-  padding-top: 32px;
-  padding-bottom: 24px;
-  font-size: 1.2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   font-weight: 600;
 }
 #information .text p {
-  padding-bottom: 32px;
+  padding-bottom: 2rem;
   font-size: 1.1rem;
 }
 #information .text h5 {
 
 }
 #information .right {
-  border-left: 1px solid #D3E0E2;
+  border-left: 0.1rem solid #384259;
   margin: 0 auto auto auto;
 }
+
+.mini-container {
+  max-width: 26.4375rem; /* 423px/16px */
+  display: flex;
+}
+.image {
+  padding: 16px 16px;
+}
+.mini-container:first-child {
+  margin-top: 2rem;
+}
+.mini-container .image:first-child {
+  padding-top: 0;
+}
+
+/*
 #information .right .mini-container{
   max-width: 423px;
   display: flex;
@@ -230,6 +246,7 @@ width: 100%;
   flex-direction: column;
   margin: auto;
 }
+*/
 
 .text h3 {
   font-size: 1.1rem;
